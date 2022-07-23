@@ -8,6 +8,6 @@ CREATE TABLE [dbo].[Student123]
     Salary integer
 );
 
-
-ALTER TABLE [dbo].[Student]
-ADD Email varchar(255);
+-- GO
+-- ALTER TABLE [dbo].[Student123]
+-- ADD Email varchar(255);
