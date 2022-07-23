@@ -1,5 +1,5 @@
-CREATE TABLE [dbo].[Orders] (
-    [OrderID]     INT NOT NULL PRIMARY KEY CLUSTERED ([OrderID] ASC),
-    [OrderNumber] INT NOT NULL,
-    [PersonID]    INT NULL CONSTRAINT [FK] FOREIGN KEY ([OrderID]) REFERENCES [dbo].[Persons] ([ID])
+CREATE TABLE Orders (
+    OrderID int NOT NULL PRIMARY KEY,
+    OrderNumber int NOT NULL,
+    PersonID INT FOREIGN KEY REFERENCES Persons(ID)
 );
